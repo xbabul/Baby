@@ -1,0 +1,149 @@
+/* 🔥 Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* 🔥 Background Full Image */
+body {
+  height: 100vh;
+  background: url("baby.jpg") no-repeat center center/cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ❌ Card hata diya */
+.card-ui {
+  width: 320px;
+  text-align: center;
+}
+
+/* 🔥 Title */
+.title {
+  font-size: 50px;
+  font-weight: 800;
+  color: #9800f1;
+
+  text-shadow: 0 9px 15px #ff047b;
+  margin-bottom: 38px;
+}
+
+/* 🔥 Subtitle */
+.sub {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+/* 🔥 Input Boxes (soft white like image) */
+.input-box {
+  display: flex;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 1);
+  padding: 12px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.input-box i {
+  color: #777;
+  margin-right: 10px;
+}
+
+.input-box input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+}
+
+/* 🔥 Password */
+.password-box {
+  position: relative;
+}
+
+.toggle-password {
+  cursor: pointer;
+}
+
+/* 🔥 Forgot */
+.forgot {
+  display: block;
+  text-align: right;
+  font-size: 12px;
+  margin-bottom: 15px;
+  color: #6c63ff;
+  text-decoration: none;
+}
+
+/* 🔥 Button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+
+  background: linear-gradient(45deg, #7b2ff7, #f107a3);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+
+  margin-top: 10px;
+}
+
+/* 🔥 Divider */
+.divider {
+  margin: 20px 0;
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* 🔥 Social Icons */
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+
+  background: rgba(255,255,255,0.6);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 🔥 Colors */
+.facebook { color: #1877f2; }
+.tiktok { color: black; }
+.instagram { color: #e4405f; }
+
+/* 🔥 Signup */
+.signup {
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+.signup span {
+  color: #6c63ff;
+  font-weight: 600;
+}
+
+
+
+.card-ui {
+    position:absolute;
+    top:65%;
+    left:61%;
+    transform:translate(-65%,-61%);
+    width:300px;
+}

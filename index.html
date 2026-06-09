@@ -1,0 +1,67 @@
+<!DOCTYPE html>  <html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Login UI</title>  <!-- CSS file -->  
+<link rel="stylesheet" href="style.css">  
+
+<!-- Font Awesome -->  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>  <body>  <div class="card-ui">  <!-- Google Font -->
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">  <h1 class="title">𝐇 𝐢 𝐢  𝐁 𝐚 𝐛 𝐮 𝐥</h1>  
+    <p class="sub">Please login to continue</p>  <!-- Username -->  
+<div class="input-box">  
+    <i class="fa fa-user"></i>  
+    <input type="text" placeholder="Username / Email">  
+</div>  
+
+<!-- Password -->  
+<div class="input-box password-box">  
+    <i class="fa fa-lock"></i>  
+    <input type="password" id="password" placeholder="Password">  
+    <i class="fa fa-eye toggle-password" onclick="togglePassword()"></i>  
+</div>  
+
+<a href="#" class="forgot">Forgot Password?</a>  
+
+<button class="login-btn">Login</button>  
+
+<div class="divider">  
+    <span>or continue with</span>  
+</div>  
+
+<!-- Social Icons -->
+
+ <div class="social">
+   <div class="icon facebook">
+        <i class="fab fa-facebook-f"></i>
+    </div>
+         <a href="https://www.tiktok.com/@just_babulz?_r=1&_t=ZS-971PanAGhak" target="_blank">
+        <div class="icon tiktok">
+            <i class="fab fa-tiktok"></i>
+        </div>
+    </a>
+     <a href="https://www.instagram.com/just_babulz/" target="_blank">
+        <div class="icon instagram">
+            <i class="fab fa-instagram"></i>
+        </div>
+    </a>
+</div>  <p class="signup">Don't have an account? <span>Sign Up</span></p>
+
+</div>  <!-- JS -->  <script>  
+function togglePassword() {  
+    const pass = document.getElementById("password");  
+    const icon = document.querySelector(".toggle-password");  
+  
+    if (pass.type === "password") {  
+        pass.type = "text";  
+        icon.classList.replace("fa-eye", "fa-eye-slash");  
+    } else {  
+        pass.type = "password";  
+        icon.classList.replace("fa-eye-slash", "fa-eye");  
+    }  
+}  
+</script>  </body>  
+</html>  
